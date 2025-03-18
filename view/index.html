@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Interativo</title>
+    <link rel="stylesheet" href="../model/style.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+      <div class="logo">
+        <img src="../assets/img/coroa.png" alt="Logo">
+    </div>
+        <h2>Pergunta 1 de 5</h2>
+        <p id="question"></p>
+        <p id="description"></p>
+        
+        <div class="options-container">
+            <label class="option">
+                <input type="radio" id="a" name="answer" class="answer">
+                <span id="a_text"></span>
+            </label>
+            <label class="option">
+                <input type="radio" id="b" name="answer" class="answer">
+                <span id="b_text"></span>
+            </label>
+            <label class="option">
+                <input type="radio" id="c" name="answer" class="answer">
+                <span id="c_text"></span>
+            </label>
+            <label class="option">
+                <input type="radio" id="d" name="answer" class="answer">
+                <span id="d_text"></span>
+            </label>
+        </div>
+
+        <p id="result" class="hidden"></p>
+
+        <button id="submit">Responder</button>
+        <button id="next" class="hidden">Próxima pergunta →</button>
+    </div>
+
+    <script src="../controller/script.js"></script>
+</body>
+</html>
